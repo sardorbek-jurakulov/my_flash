@@ -1,4 +1,5 @@
 # my_flash
+<<<<<<< HEAD
 
 A new Flutter project.
 
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+simple flash controller
+>>>>>>> 1e7cbabacdbe3572939fa689e2ce8a52b1e9a722
