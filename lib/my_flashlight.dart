@@ -33,23 +33,11 @@ class _MyFlashlightState extends State<MyFlashlight> {
           width: double.infinity,
           height: double.infinity,
           color: const Color(0xFF000000),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
+            padding: EdgeInsets.only(
+              top: MediaQuery.of(context).size.width * 0.35,
+            ),
             children: [
-              // Container(
-              //   margin: EdgeInsets.only(
-              //     top: 80,
-              //     bottom: 30,
-              //   ),
-              //   child: Text(
-              //     flashlightStatusMessage,
-              //     style: TextStyle(
-              //       color: Color(0xFFFFFFFF),
-              //       fontFamily: "Pacifico",
-              //       fontSize: 24,
-              //     ),
-              //   ),
-              // ),
               Image.asset(usingImage),
             ],
           ),
