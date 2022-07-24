@@ -24,6 +24,7 @@ class _MyFlashlightState extends State<MyFlashlight> {
         //     style: TextStyle(
         //       color: Color(0xFFFFFFFF),
         //       fontFamily: "Pacifico",
+        //       fontSize: 24,
         //     ),
         //   ),
         //   centerTitle: true,
