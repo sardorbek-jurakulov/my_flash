@@ -17,25 +17,25 @@ class _MyFlashlightState extends State<MyFlashlight> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        // appBar: AppBar(
-        //   backgroundColor: Color(0xFF000000),
-        //   title: Text(
-        //     flashlightStatusMessage,
-        //     style: TextStyle(
-        //       color: Color(0xFFFFFFFF),
-        //       fontFamily: "Pacifico",
-        //       fontSize: 24,
-        //     ),
-        //   ),
-        //   centerTitle: true,
-        // ),
+        appBar: AppBar(
+          backgroundColor: const Color(0xFF000000),
+          title: Text(
+            flashlightStatusMessage,
+            style: const TextStyle(
+              color: Color(0xFFFFFFFF),
+              fontFamily: "Pacifico",
+              fontSize: 24,
+            ),
+          ),
+          centerTitle: true,
+        ),
         body: Container(
           width: double.infinity,
           height: double.infinity,
           color: const Color(0xFF000000),
           child: ListView(
             padding: EdgeInsets.only(
-              top: MediaQuery.of(context).size.width * 0.35,
+              top: MediaQuery.of(context).size.width * 0.20,
             ),
             children: [
               Image.asset(usingImage),
@@ -59,7 +59,7 @@ class _MyFlashlightState extends State<MyFlashlight> {
               }
             });
           },
-          child: Icon(flashlightSwitcher, color: Color(0xFF444444)),
+          child: Icon(flashlightSwitcher, color: const Color(0xFF000000)),
         ),
       ),
     );
