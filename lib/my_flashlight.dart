@@ -1,6 +1,4 @@
 import "package:flutter/material.dart";
-// import 'package:flutter/src/foundation/key.dart';
-// import 'package:flutter/src/widgets/framework.dart';
 
 class MyFlashlight extends StatefulWidget {
   const MyFlashlight({Key? key}) : super(key: key);
@@ -12,8 +10,6 @@ class MyFlashlight extends StatefulWidget {
 class _MyFlashlightState extends State<MyFlashlight> {
   bool isFlashlightTurnOn = false;
   String usingImage = "assets/images/flashlight_off.jpg";
-  // String flashlightOn = "assets/images/flashlight_on.jpg";
-  // String flashlightOff = "assets/images/flashlight_off.jpg";
   IconData flashlightSwitcher = Icons.flashlight_on;
   String flashlightStatusMessage = "Flashlight is off";
 
@@ -21,20 +17,40 @@ class _MyFlashlightState extends State<MyFlashlight> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Color(0xFF000000),
-          title: Text(
-            flashlightStatusMessage,
-            style: TextStyle(color: Color(0xFFFFFFFF)),
-          ),
-          centerTitle: true,
-        ),
+        // appBar: AppBar(
+        //   backgroundColor: Color(0xFF000000),
+        //   title: Text(
+        //     flashlightStatusMessage,
+        //     style: TextStyle(
+        //       color: Color(0xFFFFFFFF),
+        //       fontFamily: "Pacifico",
+        //     ),
+        //   ),
+        //   centerTitle: true,
+        // ),
         body: Container(
           width: double.infinity,
           height: double.infinity,
           color: const Color(0xFF000000),
-          child: Center(
-            child: Image.asset(usingImage),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Container(
+              //   margin: EdgeInsets.only(
+              //     top: 80,
+              //     bottom: 30,
+              //   ),
+              //   child: Text(
+              //     flashlightStatusMessage,
+              //     style: TextStyle(
+              //       color: Color(0xFFFFFFFF),
+              //       fontFamily: "Pacifico",
+              //       fontSize: 24,
+              //     ),
+              //   ),
+              // ),
+              Image.asset(usingImage),
+            ],
           ),
         ),
         floatingActionButton: FloatingActionButton(
